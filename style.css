@@ -18,13 +18,13 @@ body,html{
     margin: 0;
     overflow: hidden;
 }
-body, .drop-zone, .upload-container{
+body, .dropfiles, .upload-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
-/* .drop-zone, .upload-container{
+/* .dropfiles, .upload-container{
 
 } */
 body{
@@ -40,7 +40,7 @@ body{
 .upload-container .title{
     font-size: 20px;
 }
-.drop-zone{
+.dropfiles{
     width: var(--container-width);
     min-height: 150px;
     border: 2px dashed var(--border-color);
@@ -50,11 +50,11 @@ body{
     background: rgb(219, 253, 219);
 
 }
-.drop-zone.dragged{
+.dropfiles.dragged{
     background: #64b9f1f1;
     border-color: red;
 }
-.drop-zone input {
+.dropfiles input {
     display: none;
   }
 .icon-container{

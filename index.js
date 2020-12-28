@@ -1,4 +1,4 @@
-const dropZone=document.querySelector(".drop-zone");
+const dropFiles=document.querySelector(".dropfiles");
 const browseBtn=document.querySelector(".browseBtn");
 const browseFile=document.querySelector("#browseFile");
 const fileUploader=document.querySelector(".bgProgress");
@@ -14,18 +14,18 @@ const total_Size = 100 * 1024 * 1024; //100mb
 const host="https://prakshare.herokuapp.com/"
 const uploadURL=`${host}api/files`  // or const uploadURL=host + "api/files"
 const emailURL=`${host}api/files/send` 
-dropZone.addEventListener("dragover",(e)=>{
+dropFiles.addEventListener("dragover",(e)=>{
     e.preventDefault()
-    if(!dropZone.classList.contains("dragged")){
-        dropZone.classList.add("dragged")
+    if(!dropFiles.classList.contains("dragged")){
+        dropFiles.classList.add("dragged")
     }
 })
-dropZone.addEventListener("dragleave",()=>{
-    dropZone.classList.remove("dragged")
+dropFiles.addEventListener("dragleave",()=>{
+    dropFiles.classList.remove("dragged")
 })
-dropZone.addEventListener("drop",(e)=>{
+dropFiles.addEventListener("drop",(e)=>{
     e.preventDefault()
-    dropZone.classList.remove("dragged")
+    dropFiles.classList.remove("dragged")
     const files=e.dataTransfer.files
     // console.table(files)
     if(files.length){
