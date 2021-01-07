@@ -57,7 +57,7 @@ const uploadFile=()=>{
     }
     const file=browseFile.files[0]
     if (file.size>total_Size){
-        showMessage("File Size Should be max 100mb")
+        showMessage("File Size Should be Max 100 MB")
         toastify.style.display="block";
         resetInput();
         return;
