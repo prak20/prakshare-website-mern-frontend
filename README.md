@@ -1,2 +1,2 @@
 # prakshare-website-mern-frontend
-Live Website at https://boring-payne-be3650.netlify.app/
+Live Website at https://dazzling-heyrovsky-84bd85.netlify.app
