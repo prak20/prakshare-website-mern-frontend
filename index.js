@@ -11,11 +11,11 @@ const copyBtn=document.querySelector("#copyBtn");
 const emailForm=document.querySelector("#emailForm");
 const toastify=document.querySelector(".toast");
 const total_Size = 100 * 1024 * 1024; //100mb
-// const host="https://cors-anywhere.herokuapp.com/https://prakshare.herokuapp.com/"
+const host="https://cors-anywhere.herokuapp.com/https://prakshare.herokuapp.com/"
 
 // Use https://cors-anywhere.herokuapp.com/corsdemo to request temporary access to cors for above website
 
-const host="https://cors.bridged.cc/https://prakshare.herokuapp.com/"
+// const host="https://cors.bridged.cc/https://prakshare.herokuapp.com/"
 
 const uploadURL=`${host}api/files`  // or const uploadURL=host + "api/files"
 const emailURL=`${host}api/files/send` 
